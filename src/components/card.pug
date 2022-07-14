@@ -1,5 +1,23 @@
+mixin Card(img,title,text,year,mileage,mileage_measure,axle_configuration,power,power_measure,payload,gross_weight,price,price_currency)
     .card
-        .card-image 
-            img(src="https://bulma.io/images/placeholders/1280x960.png", alt="")
-        .card-content 
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptates atque delectus aperiam nostrum provident quibusdam rem id sunt tenetur ullam pariatur natus consequatur est doloremque numquam. Aspernatur, beatae dolore!
+        a(href="#").columns 
+            .column.is-one-third
+                .card-image.box 
+                   img(src=`./img/${img}`, alt=`${title}`)
+            .column.card-content
+                .card-header
+                    h2.card-header-title.box=title
+                        .box=price 
+                            span=price_currency
+                p.card-content=text
+                .card-footer 
+                    .buttons 
+                        .button.is-primary=year
+                        .button.is-link=mileage
+                            span=mileage_measure
+                        .button.is-info=axle_configuration
+                        .button.is-success=power
+                            span=power_measure
+                        .button.is-warning=payload
+                        .button.is-danger=gross_weight
+

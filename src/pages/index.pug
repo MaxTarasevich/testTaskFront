@@ -1,3 +1,5 @@
+include ../components/card
+
 doctype html
 html(lang="en")
     head
@@ -15,5 +17,11 @@ html(lang="en")
                 .column first column
 
                 .column.is-four-fifths
+                    each stock in data.stock
+                        +Card(stock.image,stock.title,stock.text,stock.year,
+                            stock.mileage,stock.mileage_measure,stock.axle_configuration,
+                            stock.power,stock.power_measure,stock.payload,
+                            stock.gross_weight,stock.price,stock.price_currency)
+
                     include ../components/card
             include ../components/footer

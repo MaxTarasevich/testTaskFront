@@ -8,4 +8,13 @@ body{
     background-color: $body;
 }
 
+.card a{
+    color:$black;
+}
+
+.card span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
 @import '../../node_modules/bulma/bulma.sass'
