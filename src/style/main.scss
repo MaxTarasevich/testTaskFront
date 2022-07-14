@@ -25,4 +25,17 @@ body{
     color:$black;
 }
 
-@import '../../node_modules/bulma/bulma.sass'
+@import '../../node_modules/bulma/bulma.sass';
+
+/*Utility classes*/
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-spaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
