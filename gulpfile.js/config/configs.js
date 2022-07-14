@@ -8,7 +8,7 @@ module.exports = {
     pug:{
         pretty:!isProd,
         data: {
-            news:require('../data/news.json')
+            data:require('../data/dataset.json')
         }
     },
     webpack:{

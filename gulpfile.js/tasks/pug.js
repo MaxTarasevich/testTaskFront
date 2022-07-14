@@ -16,9 +16,7 @@ const webpHtml = require('gulp-webp-html')
 
 const pug =()=> {
     return src(path.pug.src)
-     .pipe(plumber({
-         errorHandler: notify.onError()
-     }))
+     .pipe(plumber())
      .pipe(pugToHtml(config.pug))
      //.pipe(webpHtml())
      .pipe(dest(path.pug.dest))

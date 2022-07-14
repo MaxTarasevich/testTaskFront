@@ -1,4 +1,5 @@
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('gulp-autoprefixer')
+const cssnano = require('gulp-cssnano')
 const {src, dest} = require('gulp')
 
 //Config
@@ -14,7 +15,9 @@ const SASS = require('gulp-sass')(require('sass'));
 const sass =()=> {
     return src(path.scss.src)
     .pipe(SASS())
-     .pipe(dest(path.scss.dest))
+    .pipe(autoprefixer())
+    .pipe(cssnano())
+    .pipe(dest(path.scss.dest))
  }
 
  module.exports = sass

@@ -4,8 +4,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        meta(name="description", content=`${data.page_meta.meta_description}`)
+        meta(name="keywords", content=`${data.page_meta.meta_keywords}`)
+        title=data.page_meta.title
         link(rel="stylesheet", href="../css/main.css")
     body 
-        h1 Hello word
-        a(href="about.html") About 
+        .container
+            include ../components/header
+            section.section.columns 
+                .column first column
+
+                .column.is-four-fifths
+                    include ../components/card
+            include ../components/footer

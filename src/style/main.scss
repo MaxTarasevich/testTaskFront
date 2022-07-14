@@ -1,11 +1,11 @@
-$white: #fff;
-@font-face {
-    font-family: "Neonderthaw";
-    src: url(../fonts/Neonderthaw-Regular.woff);
-   }
+@use  './colors.scss' as *;
 
-   body{
-       background-color: green;
-       color:$white;
-       padding: 10% 20%;
-   }
+
+
+
+
+body{
+    background-color: $body;
+}
+
+@import '../../node_modules/bulma/bulma.sass'

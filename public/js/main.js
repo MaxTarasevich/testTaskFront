@@ -15,7 +15,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const sum = __webpack_require__(/*! ./modules/func */ \"./src/js/modules/func.js\")\r\nconsole.log(sum(2,10))\r\nconsole.log(sum(12,10))\n\n//# sourceURL=webpack://newgulp/./src/js/main.js?");
+eval("const sum = __webpack_require__(/*! ./modules/func */ \"./src/js/modules/func.js\")\nconsole.log(sum(2,10))\nconsole.log(sum(12,10))\n\n//# sourceURL=webpack://newgulp/./src/js/main.js?");
 
 /***/ }),
 

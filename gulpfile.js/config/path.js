@@ -6,11 +6,11 @@ module.exports = {
 
     pug:{
         src:pathSrc + '/pages/*.pug',
-        watch:pathSrc + '/pages/**/*.pug',
+        watch:pathSrc + '/**/*.pug',
         dest:pathDest
     },
     scss:{
-        src:pathSrc + '/style/*.{sass,scss}',
+        src:pathSrc + '/style/main.{sass,scss}',
         watch:pathSrc + '/style/*.{sass,scss}',
         dest:pathDest + '/css'
     },
