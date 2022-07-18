@@ -5,6 +5,7 @@ $pagination-border-color:$borders;
 $pagination-hover-color:$white;
 
 
+
 body{
     background-color: $body;
 }
@@ -38,4 +39,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.padding{
+    padding: 1rem;
 }
