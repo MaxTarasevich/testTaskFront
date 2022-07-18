@@ -15,11 +15,12 @@ html(lang="en")
             include ../components/header
             include ../components/navbar
             include ../components/breadcrumbs
+            include ../components/title
             section.section.columns 
                 .column first column
 
                 .column.is-four-fifths
-                    .columns.flex-center 
+                    .columns.align-center
                         .column 
                             include ../components/pagination
                         .column
@@ -35,10 +36,10 @@ html(lang="en")
                             include ../components/pagination
                         .column
                             include ../components/sort
-                    .box 
-                                p.box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis? Quis quo molestias repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et at eveniet! Fugiat velit unde necessitatibus? Debitis illo vero aut. Iusto dolores, cupiditate error expedita veniam laborum repudiandae aspernatur eos?
-                                p.box Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, link provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis? Quis quo molestias repellat?
-                                p.box Iste, aliquid ducimus! Delectus in nisi quaerat temporibus blanditiis, molestias deleniti ea illum laudantium numquam. Laborum vero eligendi minus recusandae culpa sequi exercitationem iusto, ipsum sed suscipit fuga molestias veritatis!
+                    .box
+                        each text in data.page_text
+                            p.block=text.content
+                                
                             
 
                     include ../components/card

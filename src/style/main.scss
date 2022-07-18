@@ -30,8 +30,7 @@ body{
 
 /*Utility classes*/
 
-.flex-center{
-    display: flex;
+.align-center{
     align-items: center;
 }
 
@@ -42,4 +41,8 @@ body{
 }
 .padding{
     padding: 1rem;
+}
+.title-font{
+    font-size: 3rem;
+    font-weight: bold;
 }
